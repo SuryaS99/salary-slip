@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css link -->
+    <link rel="stylesheet" href="slip.css">
+   
+    <title>Salary slip</title>
+</head>
+<body>
+    <div>
+        <form name="form1" >
+    <center>
+   <table border="2">
+      <tr>
+          <th colspan="4"><h1 class="head">PAY SLIP TEMPLATE</h1></th>
+        </tr>
+   <tr>     
+         <th colspan="4"><h3 class="head1">[COMPANY NAME & ADDRESS]</h3></th>   
+        </tr>
+   <tr>     
+         <th colspan="4"><h3 class="head2">[COMPANY PHONE NUMBER]</h3></th>   
+         </tr>
+    <tr class="bord1">      
+          <th colspan="4"><p class="para">Salary Paystub</p></th>  
+          </tr>
+    <tr cols="4">
+        <td colspan="4">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="r1" >Employee Name:</td>
+        <td><input type="text"  value="" ></td>
+        <td class="r3">Pay Period Begin Date:</td>       
+        <td><input type="date"  value="" ></td>
+    </tr>
+    <tr>
+        <td class="r1">Employee Address:</td>
+        <td><input type="text" value="" ></td>
+        <td class="r3">Pay Period End Date:</td>       
+        <td><input type="date" name="text" value="" ></td>
+    </tr>
+    <tr>
+        <td class="r1">Employee ID:</td>
+        <td><input type="text" value="" ></td>
+        <td class="r3">Rate:</td>       
+        <td><input type="text" name="text1" value="" ></td>
+    </tr>
+    <tr>
+        <td class="r1">SSN:</td>
+        <td><input type="text" name="text" value="" ></td>
+        <td class="r3">Hours:</td>       
+        <td><input type="text" name="text2" value="" ></td>
+    </tr>
+    <tr class="bord">
+        <td colspan="2" class="h1"><b>Earnings</b></td>
+        <td colspan="2" class="h1"><b>Deductions</b></td>       
+    </tr>
+    <tr>
+        <td>Regular Earnings</td>
+        <td><input type="text" name="text3" value="" ></td>
+        <td>Provident Fund</td>       
+        <td><input type="text" name="text11" value="" ></td>
+    </tr>
+    <tr>
+        <td>Overtime</td>
+        <td><input type="text" name="text12" value="" ></td>
+        <td>Federal Withholding</td>       
+        <td><input type="text" name="text4" value="" ></td>
+    </tr>
+    <tr>
+        <td>Intensive Pay</td>
+        <td><input type="text" name="text5" value="" ></td>
+        <td>Federal MED</td>       
+        <td><input type="text" name="text" value="-" class="txt" ></td>
+    </tr>
+    <tr>
+        <td>Bonus</td>
+        <td><input type="text" name="text6" value="" ></td>
+        <td>Federal OASDI</td>       
+        <td><input type="text" name="text" value="-" class="txt" ></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>State Withholding</td>       
+        <td><input type="text" name="text" value="-" class="txt" ></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>Loan</td>       
+        <td><input type="text" name="text7" value="-" class="txt"></td>
+    </tr>
+    <tr>
+        <td>Total Earnings</td>
+        <td><input type="text" name="text8" value="" ></td>
+        <td>Total Deduction</td>       
+        <td><input type="text" name="text9" value="-" class="txt" ></td>
+    </tr>
+    <tr>
+        <td colspan="3">Current NET Salary</td>
+        <td class="val"><input type="text" value="0.0" class="txt" name="text10"></td>
+         </tr>
+    <tr>
+        <td colspan="4">YTD NET Salary</td>
+      </tr>
+    <tr class="bord">
+        <td colspan="2" class="h1"><b>Payment Information</b></td>
+        <td colspan="2" class="h1"><b>Time Off Balance</b></td>       
+    </tr>
+    <tr>
+        <td>Check Number:</td>
+        <td><input type="text" name="text" value="" ></td>
+        <td>Paid Time Off Balance:</td>       
+        <td><input type="text" name="text" value="" ></td>
+    </tr>
+    <tr>
+        <td>Check Date:</td>
+        <td><input type="date" name="text" value="" ></td>
+        <td>Sick Time Balance:</td>       
+        <td><input type="text" name="text" value="" ></td>
+    </tr>
+    <tr>
+        <td>Name of Bank:</td>
+        <td><input type="text" name="text" value="" ></td>
+        <td>Total Time Off Balance:</td>       
+        <td><input type="text" name="text" value="" ></td>
+    </tr>
+    <tr>
+        <td colspan="4">&nbsp;</td>
+            </tr>
+    <tr>
+        <td colspan="4">&nbsp;</td>
+           </tr>
+    <tr>
+        <td>Employee Signature:
+            <input type="text" name="" id="sign" value="">
+        </td>
+        <td>HR Manager:</td>
+        <td>Director Signature: 
+            <input type="text" name="" id="sign">
+        </td>   
+        <td>&nbsp;</td>    
+    </tr>
+    <tr>
+        <td colspan="4">
+            <center>
+                <!-- <button id="btn" onclick="javaScript:a1()">Claculate</button> -->
+                <input type="button" value="Claculate" id="btn" onclick="javaScript:a1()">
+            </center>
+        </td>
+    </tr>
+    </table>
+    <!-- <label for=""></label> -->
+    </center>
+    </form>
+    </div>
+     <!-- javascript link -->
+     <script src="slip.js" lang="javaScript"></script>
+</body>
+</html>

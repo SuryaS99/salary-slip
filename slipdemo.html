@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>Master</title>
+	</head>
+		<script language="javaScript">
+		function a1()
+		{
+		a=document.form1.text1.value
+		b=a*10/100
+		c=a*5/100
+		e=a*6/100
+		f=a*10/100
+		g=a*10/100
+		d=eval(a)+eval(b)+eval(c)	
+		h=eval(e)+eval(f)+eval(g)	
+		i=eval(d)-eval(h)
+		document.form1.text3.value=b
+		document.form1.text5.value=c
+		document.form1.text7.value=d
+		document.form1.text2.value=e
+		document.form1.text4.value=f
+		document.form1.text6.value=g
+		document.form1.text8.value=h
+		document.form1.text9.value=i
+		}
+		</script>
+
+			<body>
+		<form name="form1">
+		<center>
+		<table>
+		<tr>
+		<th colspan="4">XYZ Company</th>
+		</tr>
+		<tr>
+		<th colspan="4">Salary Slip</th>
+		</tr>
+		<tr>
+			<td>Personnel No.</td>
+			<td>00001</td>
+			<td>Name</td>
+			<td>Kaju Kaweja</td>
+		</tr>
+
+		<tr>
+			<td>Earning</td>
+			<td>Amount In Rs.</td>
+			<td>Deductions</td>
+			<td>Amount In Rs.</td>
+		</tr>
+		<tr>
+			<td>Basic Salary</td>
+			<td><input type="text" name="text1"></td>
+			<td>Deductions</td>
+			<td><input type="text" name="text2"></td>		
+		</tr>
+		<tr>
+			<td>HRA</td>
+			<td><input type="text" name="text3"></td>
+			<td>Professional Tax</td>
+			<td><input type="text" name="text4"></td>		
+		</tr>
+		<tr>
+			<td>Special Allowance</td>
+			<td><input type="text" name="text5"></td>
+			<td>Income Tax</td>
+			<td><input type="text" name="text6"></td>		
+		</tr>
+		<tr>
+			<td>Gross Earning</td>
+			<td><input type="text" name="text7"></td>
+			<td>Gross Deduction</td>
+			<td><input type="text" name="text8"></td>		
+		</tr>
+		<tr>
+		<td colspan="2">Net Pay</td>
+		<td colspan="2"><input type="text" name="text9"></td>
+		</tr>
+		</table>
+		<input type="button" value="Muje Click Karo" onclick="javaScript:a1()">		
+			</body>
+</html>
